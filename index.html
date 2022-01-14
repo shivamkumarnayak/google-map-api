@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Map</title>
+ 
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+ 
+  <div id="search">
+    <input type="text" id= "search" name="serch" placeholder="Enter Your Location"></input>
+    <button id="searchBtn">Search</button>
+  </div>
+
+<h1>Map Is Loading... </h1>
+
+    <div id="map"></div>
+    
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
+    async
+    ></script>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
